@@ -21,7 +21,7 @@ websites@duncanpeach.com
 
 ## Agreed website & Flows
 
-* [Proposal](https://github.com/arnevit83/ButterflyandBeyond/blob/master/ButterflyandBeyond/website_struture/Proposal.pptx)
+* [Proposal](https://github.com/arnevit83/ButterflyandBeyond/blob/master/website_struture/Proposal.pptx)
 
 ## Copyright
 
