@@ -1,12 +1,12 @@
 {
   "apps": [
     {
-      "name": "ButterflyandBeyond-Frontend",
+      "name": "BAB-Frontend",
       "script": "./dist/server.js"
     },
     {
-      "name": "ButterflyandBeyond-CMS",
-      "script": "./CMS/server.js"
+      "name": "BAB-CMS",
+      "script": "./cms/server.js"
     }
   ]
 }
