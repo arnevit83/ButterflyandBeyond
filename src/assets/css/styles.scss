@@ -1,0 +1,608 @@
+//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://use.typekit.net/vre2bou.css"); //// Core Bootstrap Variables
+//
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import '~bootstrap/scss/_spinners';
+$enable-flex: true; // fully adopt flexbox layouts
+$enable-shadows: true; // enable shadows, set to false to turn off shadows
+//// Variables for material-kit
+@import "~material-kit/assets/scss/material-kit/variables/colors";
+@import "~material-kit/assets/scss/material-kit/variables/shadow";
+@import "~material-kit/assets/scss/material-kit/variables/bootstrap-material-design-base";
+@import "~material-kit/assets/scss/material-kit/variables/custom-forms";
+@import "~material-kit/assets/scss/material-kit/variables/spacing";
+@import "~material-kit/assets/scss/material-kit/variables/body";
+@import "~material-kit/assets/scss/material-kit/variables/brand";
+@import "~material-kit/assets/scss/material-kit/variables/buttons";
+@import "~material-kit/assets/scss/material-kit/variables/card";
+@import "~material-kit/assets/scss/material-kit/variables/code";
+@import "~material-kit/assets/scss/material-kit/variables/dropdown";
+@import "~material-kit/assets/scss/material-kit/variables/forms";
+@import "~material-kit/assets/scss/material-kit/variables/list-group";
+@import "~material-kit/assets/scss/material-kit/variables/nav";
+@import "~material-kit/assets/scss/material-kit/variables/pagination";
+@import "~material-kit/assets/scss/material-kit/variables/state";
+@import "~material-kit/assets/scss/material-kit/variables/tables";
+@import "~material-kit/assets/scss/material-kit/variables/tooltip";
+@import "~material-kit/assets/scss/material-kit/variables/type";
+@import "~material-kit/assets/scss/material-kit/variables/modals";
+@import "~material-kit/assets/scss/material-kit/variables/menu";
+@import "~material-kit/assets/scss/material-kit/variables/drawer";
+@import "~material-kit/assets/scss/material-kit/variables/snackbar";
+@import "~material-kit/assets/scss/material-kit/variables/bootstrap-material-design";
+@import "~material-kit/assets/scss/material-kit/mixins";
+@import "~material-kit/assets/scss/material-kit/core-bootstrap";
+@import "~material-kit/assets/scss/material-kit/reboot"; // Core Components
+@import "~material-kit/assets/scss/material-kit/layout";
+@import "~material-kit/assets/scss/material-kit/buttons";
+@import "~material-kit/assets/scss/material-kit/misc";
+@import "~material-kit/assets/scss/material-kit/checkboxes";
+@import "~material-kit/assets/scss/material-kit/custom-forms";
+@import "~material-kit/assets/scss/material-kit/switches";
+@import "~material-kit/assets/scss/material-kit/radios";
+@import "~material-kit/assets/scss/material-kit/carousel";
+@import "~material-kit/assets/scss/material-kit/forms";
+@import "~material-kit/assets/scss/material-kit/input-group";
+@import "~material-kit/assets/scss/material-kit/list-group";
+@import "~material-kit/assets/scss/material-kit/nav";
+@import "~material-kit/assets/scss/material-kit/images";
+@import "~material-kit/assets/scss/material-kit/navbar";
+@import "~material-kit/assets/scss/material-kit/badges";
+@import "~material-kit/assets/scss/material-kit/alerts";
+@import "~material-kit/assets/scss/material-kit/pagination";
+@import "~material-kit/assets/scss/material-kit/pills";
+@import "~material-kit/assets/scss/material-kit/info-areas";
+@import "~material-kit/assets/scss/material-kit/type";
+@import "~material-kit/assets/scss/material-kit/tabs";
+@import "~material-kit/assets/scss/material-kit/tooltip";
+@import "~material-kit/assets/scss/material-kit/popover";
+@import "~material-kit/assets/scss/material-kit/modal";
+@import "~material-kit/assets/scss/material-kit/dropdown";
+@import "~material-kit/assets/scss/material-kit/drawer";
+@import "~material-kit/assets/scss/material-kit/progress";
+@import "~material-kit/assets/scss/material-kit/togglebutton";
+@import "~material-kit/assets/scss/material-kit/ripples";
+@import "~material-kit/assets/scss/material-kit/headers";
+@import "~material-kit/assets/scss/material-kit/footers"; // Cards
+@import '~material-kit/assets/scss/material-kit/cards';
+@import '~material-kit/assets/scss/material-kit/cards/card-carousel';
+@import '~material-kit/assets/scss/material-kit/cards/card-login';
+@import '~material-kit/assets/scss/material-kit/cards/card-plain'; // Core Plugins
+@import '~material-kit/assets/scss/material-kit/plugins/plugin-datetime-picker';
+@import '~material-kit/assets/scss/material-kit/plugins/plugin-nouislider'; // Sections
+@import "~material-kit/assets/scss/material-kit/responsive"; //
+//// Overrides
+//
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:focus,
+a:hover {
+  color: $pink-500;
+}
+
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu a:active,
+.dropdown-menu a:focus,
+.dropdown-menu a:hover {
+  background-color: $pink-500;
+}
+
+
+.form-control {
+  box-shadow: none!important;
+}
+
+
+////Nav Menu
+//
+
+.navbar-nav a {
+  display   : block!important;
+  text-align: center;
+}
+
+.nav-tabs .nav-item .nav-link {
+  font-size: 12px!important;
+}
+
+.dropdown-menu {
+  display: block;
+}
+@media (max-width: 1000px) {
+  #vertical-nav {
+    display: none!important;
+  }
+
+  .subbutton {
+    padding: 40px 15px;
+  }
+
+  .copyright {
+    text-align: center;
+    margin    : 0 auto;
+    float     : none!important;
+    font-size : 12px;
+  }
+}
+
+.nav-link {
+  font-size: 14px!important;
+}
+
+.nav-link fa-icon {
+  font-size: 1.25rem;
+}
+//// Right scroll nav
+
+#vertical-nav {
+  position         : fixed;
+  right            : -120px;
+  top              : 50%;
+  bottom           : auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform   : translateY(-50%);
+  -ms-transform    : translateY(-50%);
+  -o-transform     : translateY(-50%);
+  transform        : translateY(-50%);
+  z-index          : 4;
+  display          : none;
+}
+
+#vertical-nav li {
+  text-align: right;
+}
+
+#vertical-nav a {
+  display                    : inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility        : hidden;
+  width                      : 100%;
+}
+
+a {
+  color: #e91e63;
+}
+
+#vertical-nav a.is-selected .cd-dot,
+#vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform   : scale(1);
+  -ms-transform    : scale(1);
+  -o-transform     : scale(1);
+  transform        : scale(1);
+}
+
+#vertical-nav .cd-dot {
+  position                : relative;
+  top                     : 8px;
+  right                   : calc(100% - 15px);
+  height                  : 10px;
+  width                   : 10px;
+  border-radius           : 50%;
+  background-color        : #999;
+  -webkit-transition      : -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition         : -moz-transform 0.2s, background-color 0.5s;
+  transition              : transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin   : 50% 50%;
+  -ms-transform-origin    : 50% 50%;
+  -o-transform-origin     : 50% 50%;
+  transform-origin        : 50% 50%;
+}
+
+#vertical-nav a span {
+  float            : right;
+  display          : inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform   : scale(0.6);
+  -ms-transform    : scale(0.6);
+  -o-transform     : scale(0.6);
+  transform        : scale(0.6);
+}
+
+
+#vertical-nav .cd-label {
+  position                : relative;
+  margin-right            : 10px;
+  padding                 : 4px 14px;
+  color                   : white;
+  background              : rgba(0, 0, 0, 0.53);
+  font-size               : 10px;
+  border-radius           : 20px;
+  text-transform          : capitalize;
+  font-weight             : 600;
+  opacity                 : 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin   : 100% 50%;
+  -ms-transform-origin    : 100% 50%;
+  -o-transform-origin     : 100% 50%;
+  transform-origin        : 100% 50%;
+}
+
+#vertical-nav a:hover .cd-label {
+  opacity           : 1;
+  left              : -100%;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition   : -moz-transform 0.2s, opacity 0.2s;
+  transition        : transform 0.2s, opacity 0.2s;
+}
+
+#vertical-nav ul {
+  list-style: none;
+  padding   : 0;
+}
+////Home Page
+//
+
+.section-tabs {
+  background: #EEEEEE;
+}
+
+.header-filter::before {
+  background        : rgba(0, 0, 0, .35) !important;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition    : background-color 500ms linear;
+  transition        : background-color 500ms linear;
+}
+
+.page-header {
+  height  : 60vh;
+  overflow: hidden;
+}
+
+.Home .page-header {
+  height  : 100vh!important;
+  overflow: hidden;
+}
+
+.navbar-translate a .ripple-container {
+  display: none;
+}
+
+h4.description {
+  font-size: 1.5em;
+}
+
+.section {
+  padding: 45px 0;
+}
+//
+//// Scroll Up button
+//
+
+.ScrollUp:hover {
+  color : #ffffff;
+  cursor: pointer;
+}
+
+.ScrollUp {
+  display              : none;
+  width                : 30px;
+  height               : 30px;
+  position             : fixed;
+  right                : 40px;
+  bottom               : 10px;
+  color                : #ffffff77;
+  background-color     : #343a40;
+  text-shadow          : 1px 1px #21272d77;
+  padding              : 7px;
+  line-height          : 1px;
+  -moz-border-radius   : 6px;
+  -webkit-border-radius: 6px;
+  border-radius        : 6px;
+  /* future proofing */
+  -khtml-border-radius : 6px;
+  /* for old Konqueror browsers */
+  z-index              : 3;
+}
+
+
+.modal-body {
+  color      : #999;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size  : 14px;
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+.modal-backdrop {
+  opacity: 1!important;
+}
+////FooterComponent
+//
+
+.footer-black {
+  color           : #3C4858;
+  background-color: white;
+}
+
+.footer-big {
+  padding: 1.875rem 0;
+}
+
+.footer-black a {
+  color  : #3C4858;
+
+}
+
+.footer-black a:hover,
+a:active {
+  opacity: 1!important;
+  cursor : pointer;
+}
+
+.footer-black .copyright,
+.footer-black .footer-brand,
+.footer-black .footer-brand:focus,
+.footer-black .footer-brand:hover,
+.footer-black h4,
+.footer-black h5,
+.footer-black i {
+  color: #3C4858;
+}
+
+.copyright {
+  font-size: 12px;
+  display  : block;
+  width    : 240px;
+  padding  : 12px 0 !important;
+}
+
+.feed-line {
+  color: white;
+}
+
+.feed-line fa-icon {
+  color        : #9c27b0;
+  font-size    : 1.15rem;
+  margin-bottom: 10px;
+  display      : inline-block;
+  margin-right : 10px;
+}
+
+.footer-big .content {
+  text-align: left;
+}
+
+.card-title,
+.footer-big h4,
+.footer-big h5,
+.footer-brand,
+.info-title,
+.media .media-heading,
+.title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-big .social-feed p {
+  display       : table-cell;
+  vertical-align: top;
+  overflow      : hidden;
+  padding-bottom: 10px;
+  max-width     : 300px;
+}
+
+.footer-black hr {
+  border-color: #3C485822;
+}
+
+.IGFeed img {
+  width        : 20%;
+  margin-right : 5%;
+  margin-bottom: 5%;
+  float        : left;
+  border-radius: 6px !important;
+  box-shadow   : 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  height       : 25%;
+}
+
+.card-description,
+.description,
+.footer-big p {
+  color: #3C4858;
+}
+
+.subscribe-line {
+  color: #3C4858;
+}
+
+.subscribe-line .form-control {
+  box-shadow: none;
+}
+
+.subscribe-line .title {
+  color: #3C4858;
+}
+
+.subscribe-line fa-icon {
+  font-size: 1.5rem;
+}
+
+.subscribe-line .bmd-form-group {
+  position   : relative;
+  padding-top: 8px;
+  display    : block;
+}
+
+h3 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style : normal;
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer ul {
+  margin-bottom: 10px!important;
+}
+
+.main-raised {
+  min-height: 1000px;
+}
+////Generic code
+//
+
+.btn-facebook {
+  background-color: #4267b2!important;
+  color           : white!important;
+  border-radius   : 50%;
+  font-size       : 20px!important;
+  margin          : 0 2px;
+}
+
+.btn-facebook:hover {
+  opacity: 0.9;
+}
+
+.btn-instagram {
+  background-color: #e91e63!important;
+  color           : white!important;
+  border-radius   : 50%;
+  font-size       : 20px!important;
+  margin          : 0 2px;
+}
+
+.btn-instagram:hover {
+  opacity: 0.9;
+}
+
+.btn-twitter {
+  background-color: #42b6e7!important;
+  color           : white!important;
+  border-radius   : 50%;
+  font-size       : 20px!important;
+  margin          : 0 2px;
+}
+
+.btn-twitter:hover {
+  opacity: 0.9;
+}
+
+.card-title {
+  bottom: -24px!important;
+}
+.Yoga .card-title {
+  bottom: -2px!important;
+}
+.h2fix {
+  font-size    : 2rem;
+  line-height  : 1.5em;
+  margin-top   : 20px;
+  margin-bottom: 10px;
+}
+
+.h4fix {
+  font-size    : 1.125rem;
+  line-height  : 1.5em;
+  margin-top   : 20px;
+  margin-bottom: 10px;
+}
+
+.h1Fix {
+  display       : inline-block;
+  position      : relative;
+  font-family   : proxima-nova-condensed,sans-serif;
+  font-weight   : 700;
+  font-style    : normal;
+  text-shadow   : 1px 1px #21272d24;
+  text-transform: uppercase;
+  font-size     : 3.3125rem;
+  line-height   : 1em;
+  color         : $white-color;
+  text-align    : center;
+  margin-top    : 20px;
+  margin-bottom : 10px;
+}
+
+.h2Fix {
+  margin       : 10px auto 0;
+  font-family  : proxima-nova, sans-serif;
+  font-weight  : 400;
+  font-style   : normal;
+  text-shadow  : 1px 1px #21272d24;
+  font-size    : 1.8625rem;
+  line-height  : 1.4em;
+  color        : $white-color;
+  text-align   : center;
+  margin-top   : 20px;
+  margin-bottom: 10px;
+}
+
+.card-pricing .card-title {
+  margin-top: 30px;
+}
+
+.card-pricing ul li i {
+  top     : 6px;
+  position: relative;
+}
+
+.bg-grey {
+  background: #EEEEEE;
+}
+
+.card-pricing .card-monthly {
+  margin-top : -10px;
+  font-weight: 500;
+}
+
+.navbar .dropdown .dropdown-menu,
+.navbar .dropdown.show .dropdown-menu {
+  height: auto;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color:white;
+}
+.dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover, .dropdown-menu a:active, .dropdown-menu a:focus, .dropdown-menu a:hover {
+ color:white;
+}
+.carousel-control-next:hover{
+cursor: pointer;
+}
+.carousel-control-prev:hover{
+  cursor: pointer;
+}
+@media (max-width: 830px) {
+  .ScrollUp {
+    right: 20px;
+  }
+   .h2fix{
+    font-size: 1.5rem!important;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  .card-title {
+    bottom: 0px !important;
+}
+.colored-shadow{
+  top: 13px!important;
+}
+}
+#vertical-nav a:hover{
+cursor: pointer;
+}
+
+@media screen and (min-width: 767px){
+.card-profile .card-header-image {
+    max-height: 460px!important;
+}}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card{
+      display: block!important;
+
+  }
+}

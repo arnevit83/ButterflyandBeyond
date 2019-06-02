@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 1306.0876 588.00531"
+   height="588.00531"
+   width="1306.0876"
+   xml:space="preserve"
+   id="svg38"
+   version="1.1"
+   sodipodi:docname="Log.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2126"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="0.300133"
+     inkscape:cx="653.04382"
+     inkscape:cy="294.00266"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg38" /><metadata
+     id="metadata44"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+     id="defs42"><clipPath
+   id="clipPath54"
+   clipPathUnits="userSpaceOnUse"><path
+     id="path52"
+     d="M 0,1017.008 H 1017.008 V 0 H 0 Z" /></clipPath><clipPath
+   id="clipPath82"
+   clipPathUnits="userSpaceOnUse"><path
+     id="path80"
+     d="M 0,1017.008 H 1017.008 V 0 H 0 Z" /></clipPath>
+
+</defs><text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:480.94070435px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.44117022"
+     x="66.421837"
+     y="431.57251"
+     id="text828"
+     transform="scale(1.0163528,0.98391031)"><tspan
+       sodipodi:role="line"
+       id="tspan826"
+       x="66.421837"
+       y="431.57251"
+       style="stroke-width:6.44117022">Logo</tspan></text>
+</svg>
