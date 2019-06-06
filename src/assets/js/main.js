@@ -13,14 +13,12 @@
       }, 550);
       $('html').removeClass('nav-open-absolute');
     }
-    $(".dropdown-item").click(function(event) {
-      CloseMobilemenu();
-    });
+
     $(".mobile-close").click(function(event) {
       CloseMobilemenu();
     });
   };
-  CloseMobilemenu();
+
 
 
   function galleryfeedkFunc() {
@@ -39,6 +37,7 @@
   //   });
   //   Rightmenu();
   // });
+  CloseMobilemenu();
   $(window).on("scroll", function() {
     if ($(window).scrollTop() > 200) {
       $('.ScrollUp').fadeIn();
