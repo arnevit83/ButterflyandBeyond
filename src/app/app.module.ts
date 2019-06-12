@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 
 import { SignupComponent } from './Footer/app.Signup';
+import { SignupPopupComponent } from './Footer/app.SignupPopup';
 import { FooterComponent } from './Footer/app.Footer';
 import { NavComponent } from './Nav/app.Nav';
 import { PageNotFoundComponent } from './PageNotFound/app.PageNotFound';
@@ -22,7 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 //import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+//import { environment } from '../environments/environment';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -37,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavComponent,
     HomeComponent,
     SignupComponent,
+    SignupPopupComponent,
     PageNotFoundComponent,
   ],
   imports: [
