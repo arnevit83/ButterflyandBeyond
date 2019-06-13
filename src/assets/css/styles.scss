@@ -606,3 +606,13 @@ cursor: pointer;
 
   }
 }
+
+home ul {
+  list-style-image: url("/assets/images/butterfly.svg") ;
+  list-style-position: inside;  
+
+}
+
+home ul li{
+  padding-bottom: 10px;
+}

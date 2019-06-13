@@ -11,11 +11,11 @@ declare var $: any;
 export class SignupPopupComponent {
   faEnvelope = faEnvelope
   ngOnInit() {
-    $(function() {
+/*     $(function() {
       setTimeout(function() {
         $('#SignupPopup').modal('show');
       }, 10000);
-    });
+    }); */
   };
 }
 
