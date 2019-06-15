@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://butterflyandbeyondApp.com/</loc>
+    <loc>https://butterflyandbeyond.com/</loc>
     <lastmod>2019-01-15</lastmod>
   </url>
-  
+    <url>
+    <loc>https://butterflyandbeyond.com/About</loc>
+    <lastmod>2019-01-15</lastmod>
+  </url>
+    <url>
+    <loc>https://butterflyandbeyond.com/Services</loc>
+    <lastmod>2019-01-15</lastmod>
+  </url>
+    <url>
+    <loc>https://butterflyandbeyond.com/Connect</loc>
+    <lastmod>2019-01-15</lastmod>
+  </url>
+
 </urlset>

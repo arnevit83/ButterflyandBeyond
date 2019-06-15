@@ -1,7 +1,7 @@
 server {
 	listen 80;
 	listen [::]80;
-	server_name www.justpeachysolutions.co.uk justpeachysolutions.co.uk;
+	server_name butterflyandbeyond.com www.Butterflyandbeyond.com;
 	location / {
 		proxy_pass http://127.0.0.1:4000;
 		proxy_http_version 1.1;
@@ -15,7 +15,7 @@ server {
 server {
         listen 80;
         listen [::]80;
-        server_name cms.justpeachysolutions.co.uk;
+        server_name cms.butterflyandbeyond.com;
         location / {
                 proxy_pass http://127.0.0.1:1337;
         }
