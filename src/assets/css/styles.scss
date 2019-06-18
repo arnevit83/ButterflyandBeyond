@@ -1,5 +1,5 @@
 //
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
 @import url("https://use.typekit.net/vre2bou.css"); //// Core Bootstrap Variables
 //
 @import "~bootstrap/scss/functions";
@@ -76,9 +76,11 @@ $enable-shadows: true; // enable shadows, set to false to turn off shadows
 //// Overrides
 //
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+.h1, .h2, .h3, .h4, body, h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+ }
 
 a:focus,
 a:hover {
@@ -105,6 +107,7 @@ a:hover {
 .navbar-nav a {
   display   : block!important;
   text-align: center;
+  color:#212529;
 }
 
 .nav-tabs .nav-item .nav-link {
@@ -405,8 +408,9 @@ a:active {
   height       : 25%;
 }
 
+
+
 .card-description,
-.description,
 .footer-big p {
   color: #3C4858;
 }
@@ -447,8 +451,9 @@ footer ul {
   margin-bottom: 10px!important;
 }
 
-.main-raised {
+.main {
   min-height: 1000px;
+  padding-top:40px;
 }
 ////Generic code
 //
@@ -607,12 +612,38 @@ cursor: pointer;
   }
 }
 
+//Home page
+
+
 home ul {
-  list-style-image: url("/assets/images/butterfly.svg") ;
+ // list-style-image: url("/assets/images/butterfly.svg") ;
   list-style-position: inside;  
 
 }
 
 home ul li{
   padding-bottom: 10px;
+}
+.info {
+  max-width: 360px; 
+   margin: 0 auto;
+   padding: 70px 0 30px;
+   text-align: center;
+ }
+.info p {
+   font-size: 16px;
+   line-height: 1.6em;
+ }
+
+ .section-dark,.section-image{background-color:#343434;background-size:200% 240%;background:#232323;background:radial-gradient(ellipse at center,#585858 0,#232323 100%);background-size:550% 450%}.section-dark .card-plain .card-title,.section-dark .card-plain .icon i,.section-dark .title,.section-image .card-plain .card-title,.section-image .card-plain .icon i,.section-image .title{color:#fff}.section-dark .card-plain .card-description,.section-dark .card-plain .icon,.section-dark .description,.section-image .card-plain .card-description,.section-image .card-plain .icon,.section-image .description{color:hsla(0,0%,100%,.76)}.section-dark .card-plain [class*=text-],.section-dark .card-plain ul li b,.section-image .card-plain [class*=text-],.section-image .card-plain ul li b{color:#fff}.section-dark .card-plain .card-category,.section-image .card-plain .card-category{color:hsla(0,0%,100%,.5)}
+ h6.description {
+
+  margin-bottom: 30px;
+}
+.h6, h6 {
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}.section-content .title, .section-dark .title {
+  margin-bottom: 5px;
 }
