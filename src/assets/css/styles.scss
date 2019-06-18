@@ -635,7 +635,7 @@ home ul li{
    line-height: 1.6em;
  }
 
- .section-dark,.section-image{background-color:#343434;background-size:200% 240%;background:#232323;background:radial-gradient(ellipse at center,#585858 0,#232323 100%);background-size:550% 450%}.section-dark .card-plain .card-title,.section-dark .card-plain .icon i,.section-dark .title,.section-image .card-plain .card-title,.section-image .card-plain .icon i,.section-image .title{color:#fff}.section-dark .card-plain .card-description,.section-dark .card-plain .icon,.section-dark .description,.section-image .card-plain .card-description,.section-image .card-plain .icon,.section-image .description{color:hsla(0,0%,100%,.76)}.section-dark .card-plain [class*=text-],.section-dark .card-plain ul li b,.section-image .card-plain [class*=text-],.section-image .card-plain ul li b{color:#fff}.section-dark .card-plain .card-category,.section-image .card-plain .card-category{color:hsla(0,0%,100%,.5)}
+ .section-dark,.section-image{background-color:#343434;background-size:200% 240%;background:#232323;background:radial-gradient(ellipse at center,#585858 0,#232323 100%);}.section-dark .card-plain .card-title,.section-dark .card-plain .icon i,.section-dark .title,.section-image .card-plain .card-title,.section-image .card-plain .icon i,.section-image .title{color:#fff}.section-dark .card-plain .card-description,.section-dark .card-plain .icon,.section-dark .description,.section-image .card-plain .card-description,.section-image .card-plain .icon,.section-image .description{color:hsla(0,0%,100%,.76)}.section-dark .card-plain [class*=text-],.section-dark .card-plain ul li b,.section-image .card-plain [class*=text-],.section-image .card-plain ul li b{color:#fff}.section-dark .card-plain .card-category,.section-image .card-plain .card-category{color:hsla(0,0%,100%,.5)}
  h6.description {
 
   margin-bottom: 30px;
@@ -646,4 +646,11 @@ home ul li{
   font-weight: 500;
 }.section-content .title, .section-dark .title {
   margin-bottom: 5px;
+}
+.section-dark, .section-image {
+  background-color: #343434;
+  background-size: 200% 240%;
+  background: #232323;
+  background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+ 
 }
