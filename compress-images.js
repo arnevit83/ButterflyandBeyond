@@ -8,7 +8,7 @@ const outputFolder = "./src/assets/images/";
 
 imagemin(['./src/assets/images uncompressed/*.{jpg,png}'], outputFolder, {
     use: [
-        imageminWebp({quality: 75})
+        imageminWebp({quality: 85})
     ]
 }).then(() => {
     console.log('WEBP Images created');
@@ -18,7 +18,7 @@ imagemin(['./src/assets/images uncompressed/*.{jpg,png}'], outputFolder, {
 
 imagemin(['./src/assets/images uncompressed/*.png'], outputFolder, {
   use: [
-    imageminPngquant({quality: [0.3, 0.5],speed: 3,strip: true})
+    imageminPngquant({quality: [0.5, 0.6],speed: 3,strip: true})
   ]
 }).then(() => {
     console.log('PNG Images optimized');
