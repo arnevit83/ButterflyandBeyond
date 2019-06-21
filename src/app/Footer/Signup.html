@@ -10,60 +10,124 @@
   
           <div class="card card-raised card-form-horizontal">
             <div class="card-body">
-              <form type="POST" action="https://hooks.zapier.com/hooks/catch/5207658/oydy5g9/" id="emailsignup">
-                <div class="row">
+           <!--    <form type="POST" action="https://hooks.zapier.com/hooks/catch/5207658/oydy5g9/" id="emailsignup"> -->
 
-                    <div class="col-sm-6">
-                        <span class="bmd-form-group has-primary mt-5"><div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                  <fa-icon [icon]="faEnvelope"></fa-icon>
-                            </span>
-                          </div>
-                          <label for="emailsignupemail"></label> 
-                          <input type="email" name="emailsignupemail"  id="emailsignupemail"  type="text" class="form-control $line-color" placeholder="First name">
-                        </div></span>
-                        <span class="bmd-form-group has-primary  mt-3"><div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                  <fa-icon [icon]="faEnvelope"></fa-icon>
-                            </span>
-                          </div>
-                          <label for="emailsignupemail"></label> 
-                          <input type="email" name="emailsignupemail"  id="emailsignupemail"  type="text" class="form-control $line-color" placeholder="Your Email...">
-                        </div></span>
-                        <span class="bmd-form-group has-primary  mt-3"><div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                  <fa-icon [icon]="faEnvelope"></fa-icon>
-                            </span>
-                          </div>
-                          <label for="emailsignupemail"></label> 
-                          <input type="email" name="emailsignupemail"  id="emailsignupemail"  type="text" class="form-control $line-color" placeholder="Your Email...">
-                        </div></span>
-                        <button  class="btn btn-primary btn-block mt-5 " type="submit" value="button" id="emailsignupbutton">YES PLEASE!</button></div>
-                    <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12 ">
+                   
+                    <h2 class="title text-center mb-4">Free Download&nbsp;&nbsp;<fa-icon class="text-primary IconFix" [icon]="faDownload"></fa-icon></h2>
+            
+                  </div> </div>
+                  <hr class="m-0">
+                <div class="row">
+                    <div class="col-sm-7 pr-5 border-right" >
                     
-                        <div class=""><br />
-                          <h3 class="title">Free Download</h3>
-                          <p class="description">
+                      <br>
+                          <p class="description mt-4">
                         
-                            Free Coping with Being Childless Meditation
+                            <b>Free Coping with Being Childless Meditation</b>
                             <br /><br />
                             I love spoiling my subscribers!
                             <br /><br />
-                            Would you like me to keep you posted on brand new yoga weekend retreat dates, and send you free content that
+                            Would you like me to keep you posted on <b>brand new yoga weekend retreat dates</b>, and send you <b>free content</b> that
                             will
                             help you live the life unexpected with joy in your heart?
                             <br /><br />
-                            Sign up for my newsletter and receive my free audio meditation
+                            Sign up for my newsletter and receive my <b>free audio meditation</b>
                         
                           </p>  <br /><br />
                         </div>
                       
-                      </div>
+                  
+                      <div class="col-sm-5 p-4">
+                    
+
+                          <form class="mr-4 ml-4" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                              <div class="form-group bmd-form-group has-primary ">
+                                <label for="firstName" class="bmd-label-floating">Your name</label>
+                                <input type="text"  required class="form-control" id="firstName" formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                  <div *ngIf="f.firstName.errors.required">Your name is required</div>
+                              </div>
+                              </div>
+                              <div class="form-group bmd-form-group has-primary ">
+                                <label for="email"  class="bmd-label-floating  ">Email address</label>
+                                <input type="email" required class="form-control" formControlName="email" id="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                  <div *ngIf="f.email.errors.required">Email is required</div>
+                                  <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                              </div>
+                              </div>
+                   <br /> <br /> 
+                     
+                              <div class="submit text-center">
+                                       <input id="contactusbutton" type="submit" class="btn btn-primary btn-block btn-round" value="YES PLEASE !">
+                              </div>
+                            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
-              </form>
+              <!-- </form> -->
             </div>
           </div>
         </div>

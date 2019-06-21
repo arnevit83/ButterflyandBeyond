@@ -344,7 +344,7 @@ h4.description {
 }
 
 .footer-big {
-  padding: 1.875rem 0;
+  padding: 0.875rem 0;
 }
 
 .footer-black a {
@@ -371,7 +371,7 @@ a:active {
 .copyright {
   font-size: 12px;
   display: block;
-  width: 240px;
+  width: 350px;
   padding: 12px 0 !important;
 }
 
@@ -673,10 +673,11 @@ home ul li {
 
 .section-dark,
 .section-image {
-  background-color: #7f7f7f;
+  background-color: #a9a9a9;
   background-size: 200% 240%;
-  background: #7f7f7f;
-  background: radial-gradient(ellipse at center, #6c757d 0,#7f7f7f 100%)
+  background: #a9a9a9;
+  background: radial-gradient(ellipse at center, #b3b2b2  0, #a9a9a9 100%)
+  
 }
 
 .section-dark .card-plain .card-title,
@@ -709,6 +710,7 @@ home ul li {
   color: hsla(0, 0%, 100%, .5)
 }
 
+
 h6.description {
 
   margin-bottom: 30px;
@@ -724,4 +726,46 @@ h6 {
 .section-content .title,
 .section-dark .title {
   margin-bottom: 5px;
+}
+.cardmin{
+  min-height: 100px;
+}
+.contact-content {
+  padding-bottom: 40px;
+  padding-top   : 40px;
+}
+
+.info-horizontal .icon {
+  margin-top: 29px;
+}
+
+.info {
+  padding  : 10px 0 15px;
+  max-width: 495px;
+}
+
+.info-noclour a {
+  color: #999999!important;
+}
+
+.description sub {
+  color: #999999!important;
+}
+.form-control {
+  box-shadow: none!important;
+} 
+
+.subscribe-line .bmd-form-group {
+
+  padding-top: 26px;
+}
+IconFix{
+  top: -3px;
+  position: relative;
+}
+.form-control:invalid {
+  background-image: linear-gradient(to top, #9c27b0 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #ced4da 1px, rgba(206, 212, 218, 0) 1px);
+}
+.cardmin div:hover{
+  cursor: pointer;
 }
