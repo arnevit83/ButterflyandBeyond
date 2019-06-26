@@ -57,13 +57,13 @@ onSubmit() {
   if (this.registerForm.invalid) {
     return;
 }
-  const req = this.http.get('https://hooks.zapier.com/hooks/catch/44d87884/pde50tf/ddddddd?' + $.param(this.registerForm.value))
+  const req = this.http.get('https://hooks.zapier.com/hooks/catch/5207658/oydy5g9/?' + $.param(this.registerForm.value))
   .subscribe(
     res => {
    
       $(function(){
         $("#contactusbutton").attr("disabled", "disabled");
-        $("#contactusbutton").val("We will be in touch shortly");
+        $("#contactusbutton").val("Please check your emails!");
        });
         
     },
