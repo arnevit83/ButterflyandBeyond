@@ -479,7 +479,7 @@ footer ul {
 
 .main {
   min-height: 1000px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 ////Generic code
@@ -785,4 +785,12 @@ IconFix{
 }
 a:focus, a:hover {
   cursor: pointer;
+}
+.text-Menu{
+  color:  #7d00ce ;
+  font-weight: 400;
+}
+.text-Menu:hover,.text-Menu:active,.text-Menu:focus{
+  color:  #7d00ce ;
+ 
 }
