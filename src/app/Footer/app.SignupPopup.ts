@@ -23,9 +23,9 @@ export class SignupPopupComponent {
   
   ngOnInit() {
      $(function() {
-       setTimeout(function() {
+/*        setTimeout(function() {
         $('#SignupPopup').modal('show');
-      }, 3000); 
+      }, 3000);  */
 
 
 
