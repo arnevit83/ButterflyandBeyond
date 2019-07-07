@@ -128,6 +128,16 @@ a:hover {
   display: block;
 }
 
+@media (max-width: 1200px) and (min-width: 700px){
+.cardmin{
+  min-height: 105px;
+}
+}
+@media  (min-width: 1200px){
+  .cardmin{
+    min-height: 90px;
+  }
+  }
 @media (max-width: 1000px) {
   #vertical-nav {
     display: none !important;
@@ -684,12 +694,36 @@ home ul li {
 
 .section-dark,
 .section-image {
-  background-color: #a9a9a9;
+  background-color: #608Fc9;
   background-size: 200% 240%;
-  background: #a9a9a9;
-  background: radial-gradient(ellipse at center, #b3b2b2  0, #a9a9a9 100%)
+  background: #608Fc9;
+  background: radial-gradient(ellipse at center, #96b7E0  0, #608Fc9 100%)
   
 }
+.btn.btn-primary:focus, .btn.btn-primary.focus, .btn.btn-primary:hover{
+
+  background-color: #608Fc9!important;
+  border-color: #608Fc9!important;
+  box-shadow: 0 2px 2px 0 rgba(96, 143, 201, 0.14), 0 3px 1px -2px rgba(96, 143, 201,0.2), 0 1px 5px 0 rgba(96, 143, 201, 0.12)!important;
+}
+.btn.btn-primary{
+  color: #fff;
+  background-color: #96b7E0;
+  border-color: #608Fc9;
+  box-shadow: 0 2px 2px 0 rgba(96, 143, 201, 0.14), 0 3px 1px -2px rgba(96, 143, 201,0.2), 0 1px 5px 0 rgba(96, 143, 201, 0.12);
+}
+
+
+
+.text-primary{
+  color: #608Fc9!important;
+}
+.icon-primary{
+  color: #608Fc9!important;
+}
+
+
+
 
 .section-dark .card-plain .card-title,
 .section-dark .card-plain .icon i,
@@ -738,9 +772,7 @@ h6 {
 .section-dark .title {
   margin-bottom: 5px;
 }
-.cardmin{
-  min-height: 100px;
-}
+
 .contact-content {
   padding-bottom: 40px;
   padding-top   : 40px;
@@ -787,10 +819,17 @@ a:focus, a:hover {
   cursor: pointer;
 }
 .text-Menu{
-  color:  #7d00ce ;
+  color:  #608Fc9 ;
   font-weight: 400;
 }
 .text-Menu:hover,.text-Menu:active,.text-Menu:focus{
-  color:  #7d00ce ;
+  color:  #608Fc9 ;
  
 }
+
+
+.card .card-header-primary, .card.bg-primary, .card.card-rotate.bg-primary .front, .card.card-rotate.bg-primary .back{
+background: #608Fc9!important;
+}
+
+
