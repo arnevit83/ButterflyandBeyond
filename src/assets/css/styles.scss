@@ -127,8 +127,20 @@ a:hover {
 .dropdown-menu {
   display: block;
 }
+@media (max-width: 700px){
+  .butterfly{
 
+    background-position-x: 62%!important;
+  
+  }
+}
 @media (max-width: 1200px) and (min-width: 700px){
+  .butterfly{
+
+    background-position-x: 60%!important;
+  
+  }
+
 .cardmin{
   min-height: 105px;
 }
@@ -229,7 +241,7 @@ a {
 }
 
 #vertical-nav a span {
-  float: right;
+  // float: right;
   display: inline-block;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -833,3 +845,14 @@ background: #608Fc9!important;
 }
 
 
+
+.butterfly{
+  background-image: url(/assets/images/ButterFlyy.svg);
+  background-repeat: no-repeat;
+  background-position-x: 59%;
+  background-position-y: 14%;
+
+}
+.homeimage{
+  width: 800px;
+}
