@@ -18,6 +18,9 @@ import { HomeComponent } from './ContentArea/app.Home';
 import { AboutComponent } from './ContentArea/About/app.About';
 import { ConnectComponent } from './ContentArea/Connect/app.Connect';
 import { ServicesComponent } from './ContentArea/Services/app.Services';
+import { PrivacyComponent } from './ContentArea/Privacy/app.Privacy';
+
+
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
@@ -33,6 +36,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AboutComponent,
     ConnectComponent,
     ServicesComponent,
+    PrivacyComponent,
     AppComponent,
     FooterComponent,
     NavComponent,
